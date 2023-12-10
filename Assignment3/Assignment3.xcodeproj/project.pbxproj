@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C342FF172B25CEAC0073E496 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342FF162B25CEAC0073E496 /* ArticleViewModel.swift */; };
+		C342FF192B25CEE60073E496 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342FF182B25CEE60073E496 /* ArticleModel.swift */; };
+		C342FF1C2B25CF250073E496 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342FF1B2B25CF250073E496 /* Constants.swift */; };
+		C342FF1F2B25D10B0073E496 /* YDS in Frameworks */ = {isa = PBXBuildFile; productRef = C342FF1E2B25D10B0073E496 /* YDS */; };
+		C342FF212B25D10B0073E496 /* YDS-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C342FF202B25D10B0073E496 /* YDS-SwiftUI */; };
 		C3503E832B2596F400EECDA6 /* Assignment3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3503E822B2596F400EECDA6 /* Assignment3App.swift */; };
 		C3503E852B2596F400EECDA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3503E842B2596F400EECDA6 /* ContentView.swift */; };
 		C3503E872B2596F800EECDA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3503E862B2596F800EECDA6 /* Assets.xcassets */; };
@@ -16,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C342FF162B25CEAC0073E496 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		C342FF182B25CEE60073E496 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		C342FF1B2B25CF250073E496 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3503E7F2B2596F400EECDA6 /* Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3503E822B2596F400EECDA6 /* Assignment3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3App.swift; sourceTree = "<group>"; };
 		C3503E842B2596F400EECDA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,12 +38,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C342FF1F2B25D10B0073E496 /* YDS in Frameworks */,
+				C342FF212B25D10B0073E496 /* YDS-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C342FF1A2B25CF190073E496 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C342FF1B2B25CF250073E496 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C3503E762B2596F400EECDA6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +73,15 @@
 		C3503E812B2596F400EECDA6 /* Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
+				C342FF1A2B25CF190073E496 /* Utils */,
 				C3503E822B2596F400EECDA6 /* Assignment3App.swift */,
 				C3503E842B2596F400EECDA6 /* ContentView.swift */,
 				C3503E862B2596F800EECDA6 /* Assets.xcassets */,
 				C3503E8B2B2596F800EECDA6 /* Persistence.swift */,
 				C3503E8D2B2596F800EECDA6 /* Assignment3.xcdatamodeld */,
 				C3503E882B2596F800EECDA6 /* Preview Content */,
+				C342FF162B25CEAC0073E496 /* ArticleViewModel.swift */,
+				C342FF182B25CEE60073E496 /* ArticleModel.swift */,
 			);
 			path = Assignment3;
 			sourceTree = "<group>";
@@ -89,6 +110,10 @@
 			dependencies = (
 			);
 			name = Assignment3;
+			packageProductDependencies = (
+				C342FF1E2B25D10B0073E496 /* YDS */,
+				C342FF202B25D10B0073E496 /* YDS-SwiftUI */,
+			);
 			productName = Assignment3;
 			productReference = C3503E7F2B2596F400EECDA6 /* Assignment3.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +142,9 @@
 				Base,
 			);
 			mainGroup = C3503E762B2596F400EECDA6;
+			packageReferences = (
+				C342FF1D2B25D10B0073E496 /* XCRemoteSwiftPackageReference "YDS-iOS" */,
+			);
 			productRefGroup = C3503E802B2596F400EECDA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3503E8F2B2596F800EECDA6 /* Assignment3.xcdatamodeld in Sources */,
+				C342FF172B25CEAC0073E496 /* ArticleViewModel.swift in Sources */,
 				C3503E8C2B2596F800EECDA6 /* Persistence.swift in Sources */,
 				C3503E852B2596F400EECDA6 /* ContentView.swift in Sources */,
+				C342FF1C2B25CF250073E496 /* Constants.swift in Sources */,
+				C342FF192B25CEE60073E496 /* ArticleModel.swift in Sources */,
 				C3503E832B2596F400EECDA6 /* Assignment3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +381,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C342FF1D2B25D10B0073E496 /* XCRemoteSwiftPackageReference "YDS-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yourssu/YDS-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C342FF1E2B25D10B0073E496 /* YDS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C342FF1D2B25D10B0073E496 /* XCRemoteSwiftPackageReference "YDS-iOS" */;
+			productName = YDS;
+		};
+		C342FF202B25D10B0073E496 /* YDS-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C342FF1D2B25D10B0073E496 /* XCRemoteSwiftPackageReference "YDS-iOS" */;
+			productName = "YDS-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C3503E8D2B2596F800EECDA6 /* Assignment3.xcdatamodeld */ = {

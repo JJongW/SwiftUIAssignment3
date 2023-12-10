@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct Assignment3App: App {
-
+    var articleModel = ArticleViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(articleModel)
+                .onAppear {
+                    articleModel.fetch()
+                }
         }
     }
 }
